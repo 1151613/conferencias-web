@@ -1,0 +1,382 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/04/2021, 11:39:29 PM
+    Author     : berserker
+*/
+body{
+    background-image:url("../imagen/fondo.jpg") ;
+    background-size: 100%;
+    text-align: center;
+    font-family: cursive;
+}
+nav{
+    background-color: #045C9C;
+    color: white;
+    width: 63% ;
+    border-radius:  2em 2em 0 0 ;
+    border: 2px solid #CCC;
+    padding:0 3em 0 ;
+    margin:auto  ;
+}
+.nav-enlace{
+    display:inline-block;
+    text-decoration: none;
+    padding:1em 2em 1em ;
+     margin:auto  ;
+     color:#fff;
+    
+}
+.nav-enlace2{
+    display:inline-block;
+    text-decoration: none;
+    padding:1em 2em 1em ;
+     margin-right: 1em;
+     margin-left: 90%;
+     color:#fff;
+     
+    
+}
+.nav-enlace:hover{
+    background-color:#024B80 ;
+    
+}
+.img-nav{
+   height: 30%;
+    width: 30%;
+    margin:auto  ;
+    
+    }
+
+#margen{
+    
+    width: 63% ;
+    height: 90% ;
+    margin:auto  ;
+    padding:0 3em 0  ;
+    background-color:#E9F4FC ;
+    border: 2px solid #CCC;
+    border-radius: 0 0 2em 2em ;
+   
+}
+
+
+/* NOTAS DE CALENDARIO */
+
+ul,li{
+  list-style:none;
+}
+ul{
+  overflow:hidden;
+  padding:0 3em 0;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+ul li{
+  margin:1em;
+  float:left;
+}
+ul li h2{
+  font-size:100%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+ul li p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:80%;
+}
+ul li a{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+ul li:nth-child(4n) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:-10px;
+}
+ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+ol{text-align:center;}
+ol li{display:inline;padding-right:1em;}
+ol li a{color:#fff;}
+
+/* FIN NOTAS CALENDARIO */
+
+/* TABLAS PONENTES*/
+
+#pricing-table {
+	margin:3em auto;
+	text-align: center;
+        
+	/* total computed width = 222 x 3 + 226 */
+}
+
+#pricing-table .plan {
+	font: 12px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+	text-shadow: 0 1px ;        
+	background: #fff;      
+	border: 1px solid #ddd;
+	color: #333;
+	padding:0 3em 0;
+	width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */      
+	border-radius: 5px;   
+        
+    display:inline-table ;
+        
+}
+
+
+/* --------------- */	
+
+#pricing-table h3 {
+	font-size: 20px;
+	font-weight: normal;
+	padding: 20px;
+	margin: -20px -20px 50px -20px;
+	background-color: #045C9C;
+	background-image: -moz-linear-gradient(#045C9C , #fff);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#045C9C ), to(#fff));    
+	background-image: -webkit-linear-gradient( #045C9C , #fff);
+	background-image: -o-linear-gradient(#045C9C , #fff);
+	background-image: -ms-linear-gradient( #045C9C , #fff);
+	background-image: linear-gradient( #045C9C , #fff);
+        border-radius: 5px ;   
+}
+
+#pricing-table h3 span {
+	display: block;
+	font: bold 25px/100px Georgia, Serif;
+	color: #777;
+	background: #fff;
+	border: 5px solid #fff;
+	height: 100px;
+	width: 100px;
+	margin: 10px auto -65px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	-moz-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+	-webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+	box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+}
+
+/* --------------- */
+
+#pricing-table ul {
+	padding: 0;
+	list-style: none;
+        
+}
+
+#pricing-table li {
+	border-top: 1px solid #ddd;
+	padding: 0.5em 0;
+}
+
+
+.clear:before, .clear:after {
+  content:"";
+  display:table
+}
+
+.clear:after {
+  clear:both
+}
+
+#pricing-table #plann h3 {
+	font-size: 20px;
+	font-weight: normal;
+	padding: 20px;
+	margin: -20px -20px;
+	background-color: #045C9C;
+	background-image: -moz-linear-gradient(#045C9C , #fff);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#045C9C ), to(#fff));    
+	background-image: -webkit-linear-gradient( #045C9C , #fff);
+	background-image: -o-linear-gradient(#045C9C , #fff);
+	background-image: -ms-linear-gradient( #045C9C , #fff);
+	background-image: linear-gradient( #045C9C , #fff);
+        border-radius: 5px ;   
+}
+
+
+
+/* FIN TABLAS  */
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: black;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+
+.email {
+	float: right;
+	width: 45%;
+}
+.password {
+	float: right;
+	width: 40%;
+}
+.email2 {
+	float:left;
+	width: 40%;
+}
+
+input[type='text'], [type='number'],[type='email'],[type='password'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: black;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus,[type='number']:focus , [type='email']:focus, [type='password']:focus , textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+submitt{
+   display:inline-block;
+    text-decoration: none;
+    padding:1em 2em 1em ;
+     margin:auto  ;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+
+
+#form_button {
+  background: none;
+  border: solid 2px white;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+  border-radius: 2em;
+}
+
+#form_button:hover {
+  background:  #045C9C;
+  color: #F2F3EB;
+}
+
+
